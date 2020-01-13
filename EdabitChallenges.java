@@ -46,5 +46,38 @@ public Class EdabitChallenges {
     
     public static boolean reverse(boolean b) {
 		return(!b);
-	}
+    }
+    
+    public static int convert(int hours, int minutes) {
+		int seconds = (((hours*60) * 60) + (minutes * 60));
+		return seconds;
+    }
+
+    public static boolean divisible(int num) {
+		boolean div = true;
+		if(num % 100 == 0) {
+			div = true;
+		} else {
+			div = false;
+		}
+		return div;
+    }
+    
+    public static boolean equalSlices(int total, int people, int each) {
+		boolean pieForEveryone = true;
+		if (people == 0) {
+			pieForEveryone = true;
+		}
+		if(people * each > total) {
+			pieForEveryone = false;
+		} else {
+			pieForEveryone = true;
+		}
+		return pieForEveryone;
+    }
+    
+    public static int nextEdge(int side1, int side2) {
+		int nextEdge = (side1 + side2 -1);
+		return nextEdge;
+    }
 }

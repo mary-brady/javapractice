@@ -80,4 +80,26 @@ public Class EdabitChallenges {
 		int nextEdge = (side1 + side2 -1);
 		return nextEdge;
     }
+
+    public static boolean comp(String str1, String str2) {
+		boolean sames;
+		if(str1.length() == str2.length()) {
+			sames = true;
+		} else {
+			sames = false;
+		}
+		return sames;
+    }
+    
+    public static String helloName(String name) {
+		return "Hello " + name + "!";
+    }
+    
+    public static int length(String str) {
+		return str.length();
+    }
+    
+    public static boolean match(String str1, String str2) {
+		return str1.equalsIgnoreCase(str2);
+	}
 }
